@@ -1,12 +1,15 @@
 import { Text } from "react-native";
 
-export default (props) => (
+export default function Titulo(props) {
+  return (
     <Text style={{
-        fontWeight: props.fontWeight || 'bold',
-        fontSize: props.fontSize || 40,
-        color: props.color || '#000',
-        marginBottom: 10
+      opacity: props.opacity || 1,
+      fontWeight: props.weight || 'bold',
+      fontSize: props.size || 40,
+      color: props.color || '#000',
+      marginBottom: 10
     }}>
-        {props.title || ''}
+      {props.title || ''}
     </Text>
-);
+  );
+}

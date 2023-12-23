@@ -1,22 +1,25 @@
-import { TextInput } from "react-native-gesture-handler";
+import { TextInput } from "react-native";
 
 export default (props) => (
-    <TextInput
-        value={props.value ?? ''}
-        placeholder={props.placeholder ?? ""}
-        onChangeText={props.onChangeText ?? undefined}
-        secureTextEntry={props.password ?? false}
-        keyboardType={props.keyboardType ?? "default"}
-        placeholderTextColor={props.placeholderColor || '#000'}
+  <TextInput
+    value={props.value ?? ''}
+    placeholder={props.placeholder ?? ""}
+    onChangeText={props.onChangeText ?? undefined}
+    secureTextEntry={props.password ?? false}
+    keyboardType={props.keyboardType ?? "default"}
+    placeholderTextColor='#999'
 
-        style={{
-            marginTop: props.marginVertical || 0,
-            marginBottom: props.marginVertical || 0,
-            borderWidth: 1,
-            borderRadius: 7,
-            borderColor: '#aaa',
-            paddingVertical: props.paddingVertical ?? 0,
-            paddingHorizontal: props.paddingHorizontal ?? 0,
-        }}
-    />
+    style={{
+      width: '100%',
+      marginTop: 7,
+      marginBottom: 7,
+      paddingTop: 7,
+      paddingBottom: 7,
+      paddingLeft: 15,
+      paddingRight: 13,
+      borderWidth: 1,
+      borderRadius: 7,
+      borderColor: '#aaa'
+    }}
+  />
 );

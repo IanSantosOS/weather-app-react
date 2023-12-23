@@ -13,12 +13,12 @@ export default function App() {
     <>
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Login">
-          <Stack.Screen name="Login" component={Login}/>
-          <Stack.Screen name="WeatherApp" component={WeatherApp}/>
+          <Stack.Screen name='Login' component={Login}/>
+          <Stack.Screen name='Weather App' component={WeatherApp}/>
         </Stack.Navigator>
       </NavigationContainer>
 
-      <StatusBar style="auto" />
+      <StatusBar style='auto' />
     </>
   )
 }
