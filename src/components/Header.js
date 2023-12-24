@@ -7,7 +7,7 @@ export default function Titulo(props) {
       fontWeight: props.weight || 'bold',
       fontSize: props.size || 40,
       color: props.color || '#000',
-      marginBottom: 10
+      marginBottom: props.marginBottom || 10
     }}>
       {props.title || ''}
     </Text>

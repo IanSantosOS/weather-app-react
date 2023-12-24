@@ -8,9 +8,10 @@ export default (props) => (
     secureTextEntry={props.password ?? false}
     keyboardType={props.keyboardType ?? "default"}
     placeholderTextColor='#999'
+    onKeyPress={props.onKeyPress}
 
     style={{
-      width: '100%',
+      width: props.width || '100%',
       marginTop: 7,
       marginBottom: 7,
       paddingTop: 7,
@@ -19,7 +20,9 @@ export default (props) => (
       paddingRight: 13,
       borderWidth: 1,
       borderRadius: 7,
-      borderColor: '#aaa'
+      borderColor: '#aaa',
+      color: props.color || '#000',
+      backgroundColor: props.backgroundColor || 'transparent'
     }}
   />
 );
